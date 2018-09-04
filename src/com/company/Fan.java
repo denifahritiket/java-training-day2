@@ -48,4 +48,13 @@ public class Fan {
   public void setColor(String color) {
     this.color = color;
   }
+
+  public String toString(){
+    if (this.on){
+      return this.speed + " "+ this.color + " "+ this.radius;
+    }else{
+      return this.color + " "+ this.radius + " .fan is off" ;
+    }
+
+  }
 }
